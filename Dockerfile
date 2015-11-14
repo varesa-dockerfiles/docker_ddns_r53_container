@@ -1,8 +1,7 @@
-FROM centos:latest
+FROM registry.esav.fi:5000/ruby
 MAINTAINER Esa Varemo <esa@kuivanto.fi>
 
-RUN yum update -y
-RUN yum install -y git golang ruby wget
+RUN yum install -y golang
 
 RUN curl -sSL https://get.docker.com/ | sh
 
